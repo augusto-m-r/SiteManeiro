@@ -1,5 +1,5 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  'Inter', sans-serif;
     background-color: rgb(47, 158, 255);
     margin: 0;
     padding: 0;
@@ -7,44 +7,105 @@
 
 .botoesSuperiores {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     gap: 40px;
-    background-color: rgb(246, 246, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 0px gray;
 }
 
 .botoesSuperiores p {
     padding: 5px;
     background-color: rgb(47, 158, 255);
     border-radius: 5px;
-    box-shadow: 2px 2px 0px gray;
+    box-shadow: 0px 2px 0px gray;
     cursor: pointer;
     color: white;
-    text-shadow: 2px 2px 0px gray;
+    text-shadow: 0px 2px 0px gray;
     font-size: 40px;
+    user-select: none;
+}
+
+.botoesSuperiores p:hover {
+    background-color: white;
+    color: rgb(47, 158, 255);
+    text-shadow: none;
+    box-shadow: none;
 }
 
 .mainBody {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: 10px;
     color: white;
 }
 
 .lista {
     list-style-type: none;
+    background: local;
 }
 
-.mainBody nav section {
-    background-color: rgb(246, 246, 255);
+.lista li {
+    cursor: pointer;
+    width: fit-content;
 }
 
-.mainBody section {
+.mainBody nav ul li:hover {
+    color: blue;
+}
+
+.mainBody section p {
     text-align: right;
 }
 
-footer .dados {
+.dados {
     margin: 10px;
     color: white;
+}
+
+.dados img {
+    cursor: pointer;
+    background: transparent; /* Without this the drop-shadow doesn't work */
+    filter: drop-shadow(0px 2px 0px gray);
+}
+
+.contato {
+    width: fit-content;
+    display: flex;
+    text-decoration: underline;
+}
+
+.contato:hover {
+    color: lightblue;
+}
+
+.ad {
+    width: fit-content;
+    position: relative;
+}
+
+.ad img {
+    width: 500px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0px 2px 0px gray;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.ad-label {
+    pointer-events: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: 10px;
+    top: 0px;
+    background-color: rgba(64, 64, 64, 0.8);
+    color: #f4b400;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-weight: bold;
 }
