@@ -42,7 +42,10 @@
 }
 
 .lista {
+    position: sticky;
+    top: 10px;
     list-style-type: none;
+    font-size: 20px;
     background: local;
 }
 
